@@ -1,4 +1,12 @@
-# .vimrc configuration
+## 특정 .vimrc로 vim 실행하기
+
+```bash
+vim -u path/to/vimrc/file
+```
+
+alias를 추가하면 원하는 사용자만 vim의 플러그인을 사용할 수 있음.
+
+## .vimrc configuration
 
 ### Vundle 설정
 
