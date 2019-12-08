@@ -66,18 +66,24 @@ set ruler
 set title
 ```
 
+### backspace 사용시 줄이동
+
 ```
 set bs=indent,eol,start
 ```
 ```
 set showcmd
 ```
+### 검색 시 하이라이트
+
 ```
 set hlsearch
 ```
 ```
 :syntax on
 ```
+
+### NerdTree에서 창 이동시 컨트롤 + (h,j,k,l) 사용
 
 ```
 " =================
@@ -92,15 +98,14 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 ```
 
+### 시프트 누르지 않고 `:` 입력
+
 ```
 "don't use shift
 map ; :
 ```
 
-```
-"	ctag setting
-"set tags
-```
+### vi tap 관리
 
 ```
 " Key mappings
@@ -108,11 +113,18 @@ nnoremap <F9> :tabnew<CR>
 nnoremap <F10> :tabclose<CR>
 nnoremap <tab> :tabnext<CR>
 nnoremap <S-tab> :tabprevious<CR>
+```
+
+### pane 사이즈 조절
+
+```
 nnoremap - :vertical res -5<CR>
 nnoremap = :vertical res +5<CR>
 nnoremap _ :res -10<CR>
 nnoremap + :res +10<CR>
 ```
+
+### vim 실행시 자동으로 NerdTree 실행
 
 ```
 " Nerdtree setting
@@ -120,6 +132,8 @@ let g:nerdtree_tabs_open_on_console_startup = 1
 let g:nerdtree_tabs_autoclose = 1
 map <C-u> :NERDTreeTabsToggle<CR>
 ```
+### 컬러스킴 사용
+
 ```
 " colorscheme jellybeans
 colorscheme jellybeans
